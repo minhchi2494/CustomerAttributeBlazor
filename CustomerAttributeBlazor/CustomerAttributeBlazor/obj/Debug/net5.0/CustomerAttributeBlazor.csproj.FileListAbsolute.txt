@@ -57,3 +57,4 @@ D:\CustomerAttributeBlazor\CustomerAttributeBlazor\CustomerAttributeBlazor\obj\D
 D:\CustomerAttributeBlazor\CustomerAttributeBlazor\CustomerAttributeBlazor\obj\Debug\net5.0\ref\CustomerAttributeBlazor.dll
 D:\CustomerAttributeBlazor\CustomerAttributeBlazor\CustomerAttributeBlazor\obj\Debug\net5.0\CustomerAttributeBlazor.pdb
 D:\CustomerAttributeBlazor\CustomerAttributeBlazor\CustomerAttributeBlazor\obj\Debug\net5.0\CustomerAttributeBlazor.genruntimeconfig.cache
+D:\CustomerAttributeBlazor\CustomerAttributeBlazor\CustomerAttributeBlazor\obj\Debug\net5.0\CustomerAttributeBlazor.csproj.AssemblyReference.cache
