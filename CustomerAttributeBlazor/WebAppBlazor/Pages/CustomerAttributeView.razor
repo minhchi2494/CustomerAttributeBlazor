@@ -5,6 +5,7 @@
 @if(CustomerAttributes == null)
 {
     <h4>Loading</h4>
+    <a href="/details/1">Details</a>
 }else
 {
     <table>
@@ -32,11 +33,6 @@
                     <td>@item.EffectiveDate</td>
                     <td>@item.ValidUntil</td>
                     <td><a href="/details/@item.Id">Details</a></td>
-                    <td>
-                        <span class="icon icon-edit" @onclick="() => Edit_ClickAsync(item.Id)">
-                            text
-                        </span>
-                    </td>
                 </tr>
             }
         </tbody>

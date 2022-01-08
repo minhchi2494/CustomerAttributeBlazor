@@ -22,10 +22,5 @@ namespace WebAppBlazor.Pages
         {
             CustomerAttributes = await services.getAll();
         }
-
-        public async Task Edit_ClickAsync(int id)
-        {
-            navigation.NavigateTo("/details/" + id);
-        }
     }
 }

@@ -23,7 +23,7 @@ namespace WebAppBlazor.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            CustomerAttribute = await services.GetOne(1);
+            //CustomerAttribute = await services.GetOne(1);
         }
 
 
