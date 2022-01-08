@@ -453,5 +453,5 @@ $RECYCLE.BIN/
 /SysAdmin.Web/wwwroot/demo
 *.zip
 
-*.suo
-*.csproj*
+*.vs/*
+*.WebAppBlazor/obj/*
