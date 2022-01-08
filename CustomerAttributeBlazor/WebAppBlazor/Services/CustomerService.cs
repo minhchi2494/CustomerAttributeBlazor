@@ -25,7 +25,7 @@ namespace WebAppBlazor.Services
 
         public async Task<CustomerAttributeModel> GetOne(int id)
         {
-            var result = await _httpClient.GetFromJsonAsync<CustomerAttributeModel>("/api/CustomerAttribute");
+            var result = await _httpClient.GetFromJsonAsync<CustomerAttributeModel>($"/api/CustomerAttribute/{id}");
             return result;
         }
 
@@ -34,9 +34,10 @@ namespace WebAppBlazor.Services
             throw new NotImplementedException();
         }
 
-        public Task<CustomerAttributeModel> Delete(int id)
+        public async Task<CustomerAttributeModel> Delete(int id)
         {
-            throw new NotImplementedException();
+            var result = await _httpClient.GetFromJsonAsync<CustomerAttributeModel>($"/api/CustomerAttribute/{id}");
+            return result;
         }
 
         public Task<CustomerAttributeModel> Edit(CustomerAttributeModel editCust)

@@ -8,7 +8,7 @@
     <a href="/details/1">Details</a>
 }else
 {
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Attribute Master</th>
@@ -32,7 +32,19 @@
                     <td>@item.Parent</td>
                     <td>@item.EffectiveDate</td>
                     <td>@item.ValidUntil</td>
+<<<<<<< Updated upstream
                     <td><a href="/details/@item.Id">Details</a></td>
+=======
+                    <td>
+                        <a href="/details/@item.Id">Details</a>
+                        <a href="/delete/@item.Id">Delete</a>
+                    </td>
+                    @*<td>
+                        <span class="icon icon-edit" @onclick="() => Edit_ClickAsync(item.Id)">
+                                            text
+                                        </span>
+                    </td>*@
+>>>>>>> Stashed changes
                 </tr>
             }
         </tbody>

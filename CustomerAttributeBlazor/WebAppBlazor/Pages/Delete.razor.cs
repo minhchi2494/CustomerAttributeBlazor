@@ -8,29 +8,19 @@ using Microsoft.AspNetCore.Components;
 
 namespace WebAppBlazor.Pages
 {
-    public partial class CustomerAttributeDetails
+    public partial class Delete
     {
-
-
-
         [Inject]
-        private ICustomerService services { get; set; }
+        private ICustomerService _service { get; set; }
 
-        private CustomerAttributeModel CustomerAttribute { set; get; }
+        private CustomerAttributeModel ca = new CustomerAttributeModel();
 
         [Parameter]
         public int id { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-<<<<<<< Updated upstream
-            //CustomerAttribute = await services.GetOne(1);
-        }
-
-=======
-            CustomerAttribute = await services.GetOne(id);
->>>>>>> Stashed changes
-
+            ca = await _service.Delete(id);
         }
     }
 }

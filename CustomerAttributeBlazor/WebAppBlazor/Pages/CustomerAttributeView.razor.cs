@@ -16,11 +16,19 @@ namespace WebAppBlazor.Pages
 
         [Inject]
         private ICustomerService services { get; set; }
-        private List<CustomerAttributeModel> CustomerAttributes;
+        private List<CustomerAttributeModel> CustomerAttributes { set; get; }
 
         protected override async Task OnInitializedAsync()
         {
             CustomerAttributes = await services.getAll();
         }
+<<<<<<< Updated upstream
+=======
+
+        /*public async Task Edit_ClickAsync(int id)
+        {
+            navigation.NavigateTo("/details/" + id);
+        }*/
+>>>>>>> Stashed changes
     }
 }
